@@ -43,7 +43,8 @@ class address
 
 void address::setup(address)
 {
-	
+	cout<<"enter the name of the house\n";
+	getline(cin, h_num);
 }
 
 void address::display(address)
@@ -68,7 +69,10 @@ class house
 
 void house::setup(house)
 {
+	cout<<"enter the name of the house\n";
+	getline(cin, name);
 	
+	address::setup(add1);
 }
 
 void house::display(house)
